@@ -4,7 +4,7 @@
   Plugin URI: https://underconstructionpage.com/
   Description: Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.
   Author: WebFactory Ltd
-  Version: 4.03
+  Version: 4.04
   Requires at least: 4.0
   Requires PHP: 5.2
   Tested up to: 6.9
@@ -2350,7 +2350,7 @@ class UCP
     <tr>
       <td>One Time Payment</td>
       <td>One Time Payment</td>
-      <td>Yearly / Monthly Payment</td>
+      <td>Yearly Payment</td>
     </tr>
     <tr>
       <td>100 Client or Personal Sites<br>(licenses are transferable between sites)</td>

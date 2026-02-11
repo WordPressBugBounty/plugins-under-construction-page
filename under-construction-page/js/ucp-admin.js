@@ -467,7 +467,20 @@ jQuery(document).ready(function($) {
     pos_left = Math.round($('#ucp_tabs').width()) + 220;
     pos_top = Math.round($('.ucp-logo').offset().top) + 10;
 
-    $('#ucp-sidebar-ads').css('top', pos_top + 'px').css('left', pos_left + 'px');
+    if ($("body").hasClass("rtl")) {
+      $("#ucp-sidebar-ads").css({
+        top: pos_top + "px",
+        right: pos_left + "px",
+        left: "auto",
+      });
+    } else {
+      $("#ucp-sidebar-ads").css({
+        top: pos_top + "px",
+        left: pos_left + "px",
+        right: "auto",
+      });
+    }
+    
     $('#ucp-sidebar-ads').show();
   } // ucp_position_wpfssl_ad
 

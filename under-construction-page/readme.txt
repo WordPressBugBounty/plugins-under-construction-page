@@ -4,7 +4,7 @@ Tags: coming soon page, under construction mode, under construction, under const
 Requires at least: 4.0
 Requires PHP: 5.2
 Tested up to: 6.9
-Stable tag: 4.03
+Stable tag: 4.04
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,6 +140,10 @@ Or if needed, upload manually;
 
 
 == Changelog ==
+= 4.04 =
+* 2026/02/11
+* RTL layout fix
+
 = 4.03 =
 * 2025/08/10
 * expanded list of allowed CSS properties in Custom CSS
