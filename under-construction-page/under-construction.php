@@ -7,7 +7,7 @@
   Version: 4.03
   Requires at least: 4.0
   Requires PHP: 5.2
-  Tested up to: 6.8
+  Tested up to: 6.9
   License: GPLv2 or later
   Author URI: https://www.webfactoryltd.com/
   Text Domain: under-construction-page
@@ -2406,9 +2406,8 @@ class UCP
       <td>
         <a style="margin-bottom: 8px;" data-href-org="' . esc_url($products['personal-yearly']['link']) . '" class="promo-button go-to-license-key" href="' . esc_url($products['personal-yearly']['link']) . '" target="_blank">';
         self::wp_kses_wf($products['personal-yearly']['price']);
-        echo '</a>or <a target="_blank" class="go-to-license-key promo-link" data-href-org="' . esc_url($products['personal-monthly']['link']) . '" href="' . esc_url($products['personal-monthly']['link']) . '">';
-        self::wp_kses_wf($products['personal-monthly']['price']);
-        echo '</a>
+        echo '</a>';
+        echo '
       </td>
     </tr>
     <tr class="bb0">
