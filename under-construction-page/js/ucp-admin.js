@@ -327,9 +327,9 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  // show upsell popup every 4 months
+  // show upsell popup every 3 months
   if (window.localStorage.getItem('ucp_upsell_timestamp') === null ||
-      (new Date().getTime() / 1000 - window.localStorage.getItem('ucp_upsell_timestamp')) > (86400 * 120)) {
+      (new Date().getTime() / 1000 - window.localStorage.getItem('ucp_upsell_timestamp')) > (86400 * 90)) {
     window.localStorage.setItem('ucp_upsell_timestamp', Math.round(new Date().getTime() / 1000));
 
     $('.promo-button, .promo-link').each(function(ind, el) {

@@ -4,10 +4,10 @@
   Plugin URI: https://underconstructionpage.com/
   Description: Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.
   Author: WebFactory Ltd
-  Version: 4.05
+  Version: 5.81
   Requires at least: 4.0
   Requires PHP: 5.2
-  Tested up to: 6.9
+  Tested up to: 7.0
   License: GPLv2 or later
   Author URI: https://www.webfactoryltd.com/
   Text Domain: under-construction-page
@@ -2176,7 +2176,7 @@ class UCP
 
         $products['agency'] = array('link' => self::generate_web_link('pricing-table', 'buy2/', array('product' => 'agency-welcome')), 'price' => 'BUY NOW <u>$51 OFF</u><br><del>$250</del> $199');
         $products['team'] = array('link' => self::generate_web_link('pricing-table', 'buy2/', array('product' => 'team-welcome')), 'price' => 'BUY NOW <u>$30 OFF</u><br><del>$119</del> $89');
-        $products['personal-monthly'] = array('link' => self::generate_web_link('pricing-table', 'buy2/', array('product' => 'personal-monthly')), 'price' => 'only $8.99<small>/month</small>');
+        $products['personal-monthly'] = array('link' => self::generate_web_link('pricing-table', 'buy2/', array('product' => 'personal-monthly')), 'price' => 'only $9.99<small>/month</small>');
         $products['personal-yearly'] = array('link' => self::generate_web_link('pricing-table', 'buy2/', array('product' => 'personal-yearly')), 'price' => 'BUY NOW<br>$49<small>/year</small>');
 
         // upsell dialog
@@ -2304,11 +2304,11 @@ class UCP
       </td>
     </tr>
     <tr class="bb0">
-    <td colspan="3"><span class="instant-download"><span class="dashicons dashicons-yes"></span> Secure payment via Paddle <span class="dashicons dashicons-yes"></span> Instant activation from WP admin <span class="dashicons dashicons-yes"></span> 100% No-Risk 7 Day Money Back Guarantee</span></td>
+    <td colspan="3"><div class="upsell-footer-2">Need the plugin only for a <b>short period of time</b>? <a class="go-to-license-key promo-link" target="_blank" data-href-org="' . esc_url($products['personal-monthly']['link']) . '" href="' . esc_url($products['personal-monthly']['link']) . '"><b>Get it for only $9.99</b><small> /month</small></a> &amp; cancel any time!</div></td>
     </tr>
   </tbody>
 </table>';
-        echo '<p class="upsell-footer">More pricing options &amp; details about packages are available on <a href="' . esc_url(self::generate_web_link('pricing-table-more-info')) . '" target="_blank">underconstructionpage.com</a>. Already have a PRO license? <a href="#" class="go-to-license-key">Activate it</a>.</p>';
+        echo '<p class="upsell-footer">More pricing options &amp; details about packages are available on <a href="' . esc_url(self::generate_web_link('pricing-table-more-info')) . '" target="_blank">underconstructionpage.com</a>. Already have a PRO license? <a href="#" class="go-to-license-key">Activate it</a>.<br><b>100% No-Risk Money Back Guarantee!</b> If you don\'t like the plugin over the next 7 days, we\'ll refund 100% of your money. No questions asked! Payments are processed by our merchant of records - <a href="https://paddle.com/" target="_blank">Paddle</a>.</p>';
         echo '</div>'; // pricing tab
         echo '</div>';
 

@@ -1050,6 +1050,20 @@ h3.ucp-pro-logo span {
 .upsell-header b {
   font-weight: bolder;
 }
+.upsell-footer-2 {
+  margin: 0 0 0 0;
+  background: #ff7900;
+  color: #fefefe;
+  padding: 10px;
+  box-sizing: content-box;
+  border: 1px solid #111;
+}
+.upsell-footer-2 b {
+  font-weight: bolder;
+}
+.upsell-footer-2 a {
+  color: white;
+}
 #ucp-pricing-table,
 #ucp-pricing-table tr,
 #ucp-pricing-table td,
