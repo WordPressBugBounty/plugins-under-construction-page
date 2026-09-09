@@ -4,7 +4,7 @@
   Plugin URI: https://underconstructionpage.com/
   Description: Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.
   Author: WebFactory Ltd
-  Version: 5.81
+  Version: 5.83
   Requires at least: 4.0
   Requires PHP: 5.2
   Tested up to: 7.0
@@ -1016,6 +1016,12 @@ class UCP
             'href'   => admin_url('options-general.php?page=ucp'),
             'parent' => 'under-construction-page'
         ));
+        $wp_admin_bar->add_node(array(
+            'id'     => 'ucp-go-pro',
+            'title'  => esc_attr__('Get PRO', 'under-construction-page'),
+            'href'   => admin_url('options-general.php?page=ucp#open-pro-dialog'),
+            'parent' => 'under-construction-page'
+        ));
     } // admin_bar
 
 
@@ -1034,7 +1040,7 @@ class UCP
     static function plugin_action_links($links)
     {
         $settings_link = '<a href="' . admin_url('options-general.php?page=ucp') . '" title="' . esc_attr__('UnderConstruction Settings', 'under-construction-page') . '">' . esc_attr__('Settings', 'under-construction-page') . '</a>';
-        $pro_link = '<a target="_blank" href="' . self::generate_web_link('plugins-table-left') . '" title="' . esc_attr__('Get PRO', 'under-construction-page') . '">' . __('Go <b>PRO</b>', 'under-construction-page') . '</a>';
+        $pro_link = '<a href="' . admin_url('options-general.php?page=ucp#open-pro-dialog') . '" title="' . esc_attr__('Get PRO', 'under-construction-page') . '">' . __('Go <b>PRO</b>', 'under-construction-page') . '</a>';
 
         array_unshift($links, $pro_link);
         array_unshift($links, $settings_link);
@@ -1047,7 +1053,7 @@ class UCP
     static function plugin_meta_links($links, $file)
     {
         $support_link = '<a target="_blank" href="https://wordpress.org/support/plugin/under-construction-page" title="' . esc_attr__('Get help', 'under-construction-page') . '">' . esc_attr__('Support', 'under-construction-page') . '</a>';
-        $pro_link = '<a target="_blank" href="' . self::generate_web_link('plugins-table-right') . '" title="' . esc_attr__('Get PRO', 'under-construction-page') . '">' . __('Get the <b>PRO</b> version', 'under-construction-page') . '</a>';
+        $pro_link = '<a href="' . admin_url('options-general.php?page=ucp#open-pro-dialog') . '" title="' . esc_attr__('Get PRO', 'under-construction-page') . '">' . __('Get the <b>PRO</b> version', 'under-construction-page') . '</a>';
 
 
         if ($file == plugin_basename(__FILE__)) {

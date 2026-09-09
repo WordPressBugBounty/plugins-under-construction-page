@@ -340,6 +340,12 @@ jQuery(document).ready(function($) {
     $('#upsell-dialog').dialog('open');
     $('#tabs_upsell').tabs('option', 'active', 0);
   }
+  
+  if (window.location.hash == '#open-pro-dialog') {
+    $('#upsell-dialog').dialog('open');
+    $('#tabs_upsell').tabs('option', 'active', 0);
+    window.location.hash = '';
+  }
 
   $('.settings_page_ucp').on('click', '.open-weglot-upsell', function(e) {
     e.preventDefault();
