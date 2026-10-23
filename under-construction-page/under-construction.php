@@ -7,7 +7,7 @@
   Version: 5.83
   Requires at least: 4.0
   Requires PHP: 5.2
-  Tested up to: 7.0
+  Tested up to: 7.1
   License: GPLv2 or later
   Author URI: https://www.webfactoryltd.com/
   Text Domain: under-construction-page
